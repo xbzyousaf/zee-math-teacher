@@ -1,0 +1,30 @@
+.profile-detail-section{
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-cat {
+    font-size: 18px;
+    color: #0262C2;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.profile-cat-done {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00AB55;
+    float: right;
+}
+
+.profile-cat-not-done {
+    font-size: 18px;
+    font-weight: bold;
+    color: #da1e28;
+    float: right;
+}
+
+.profile-cat:hover {
+    text-decoration: underline;
+}

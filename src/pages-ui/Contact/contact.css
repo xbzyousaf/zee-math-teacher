@@ -1,0 +1,121 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px ! important;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+.contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 1rem 0rem;
+}
+
+.contact-container .page-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .page-heading h1 {
+    margin-bottom: 0;
+}
+
+.Childform {
+    width: 60%;
+    background-color: rgb(250, 249, 249);
+    padding: 30px;
+}
+.form-top {
+    height: 70px;
+}
+
+.form-top > img {
+    height: 50px;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Open Sans';
+}
+.mt20 {
+    margin-top: 20px;
+}
+
+input {
+    margin-top: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    line-height: 1.2em;
+}
+
+.inp250 {
+    min-width: 505px;
+}
+
+.red {
+    color: red;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .SubmitBtn {
+    width: 120px;
+    padding: 8px 12px;
+    color: white;
+    background: red;
+} */
+.submitbtn-inside {
+    float: right;
+    margin-top: 140px;
+}
+.childheading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.contact-link-style {
+    color: #0099ff !important;
+}
+.contact-link-style:hover {
+    color: #2baaff !important;
+}
+
+.submit-contact {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-contact > button{
+    flex:0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    min-width: 100px ! important;
+}
+
+@media screen and (max-width: 525px) {
+    .submit-contact > button{
+        flex:1
+    }
+}

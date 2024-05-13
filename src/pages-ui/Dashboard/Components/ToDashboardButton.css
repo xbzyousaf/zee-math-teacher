@@ -1,0 +1,17 @@
+
+@media screen and (max-width: 900px) {
+    .back-to-dashboard{
+        justify-content: start !important;
+    }
+    .to-dashboard {
+        display: none;
+    }
+}
+
+.back-to-dashboard .link {
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+        color: #0262C2;
+    }
+}

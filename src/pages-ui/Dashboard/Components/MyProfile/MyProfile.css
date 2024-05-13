@@ -1,0 +1,288 @@
+.my-profile {
+    /*border: 1px solid whitesmoke;*/
+    border: none ;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);*/
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 70px;
+}
+
+.my-profile .avatar {
+    height: 100%;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.my-profile .avatar .button {
+    display: none;
+    right: 0rem;
+    top: 0rem;
+}
+
+.my-profile .available {
+    display: flex;
+    width: auto;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.my-profile .right-side {
+    width: 8.5rem;
+    float: right;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.my-profile .right-side .price {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.my-profile .main-text {
+    text-transform: capitalize;
+}
+
+.my-profile .main-text .alert {
+    text-transform: none;
+    margin-right: 0.5rem;
+    font-size: 18pt;
+    font-weight: 800;
+}
+
+.my-profile .billed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-38%) translateY(10px) rotateZ(-45deg);
+    width: 300px;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    background-color: #0262C2;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+.my-profile .main-text .title {
+    font-size: 17pt;
+    font-weight: 800;
+    text-transform: capitalize;
+    overflow-wrap: anywhere;
+}
+
+.my-profile .avatar .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-profile .avatar img {
+    height: 200px;
+    width: auto;
+}
+
+.my-profile .description {
+    flex: 1;
+    width: 100%;
+}
+
+.my-profile .tutor-profile-header {
+    display: flex;
+    align-items: center
+}
+
+.my-profile .text {
+    flex: 1;
+}
+
+.my-profile .description .button {
+    flex: 0;
+    padding: 1rem 0 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-profile .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0px 2px 0px;
+    gap: 0.75rem;
+}
+
+.my-profile .name {
+    font-size: 17pt;
+    font-weight: 800;
+}
+
+.my-profile .main-text {
+    margin-bottom: 0.5rem;
+}
+
+.my-profile .info-items {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: darkgray;
+    flex-wrap: wrap;
+}
+
+.my-profile .info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.my-profile .qualification {
+    display: inline-block;
+    margin: 0.4rem 0.6rem 0.2rem 0;
+    border: darkgray solid 1px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    color: darkgray;
+}
+
+.my-profile .qualifications {
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-profile .social-links-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.my-profile .social-link {
+    display: inline-flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+    font-size: 16px;
+    gap: 0.25rem;
+}
+.my-profile .profile-detail-section{
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-profile .profile-cat {
+    font-size: 18px;
+    color: #0262C2;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.my-profile .profile-cat-done {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00AB55;
+    float: right;
+}
+
+.my-profile .profile-cat-not-done {
+  font-size: 18px;
+  font-weight: bold;
+  color: #da1e28;
+  float: right;
+}
+
+.my-profile .profile-cat:hover {
+    text-decoration: underline;
+}
+
+.my-profile .qualification-title {
+    font-size: 17px;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.PhoneInputCountry {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    overflow: hidden;
+    border-color: rgba(0, 0, 0, 0.23);
+    padding: 10px 15px;
+}
+.PhoneInputInput {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentColor;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    width: 100%;
+    -webkit-animation-name: mui-auto-fill-cancel;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-animation-duration: 10ms;
+    animation-duration: 10ms;
+    padding: 16.5px 14px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    overflow: hidden;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1050px) {
+    .my-profile .tutor-profile-header{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .my-profile {
+        flex-direction: column;
+    }
+    .my-profile .profile-detail-section {
+        flex-direction: column;
+    }
+
+    .my-profile .description .button {
+        display: none;
+    }
+
+    .my-profile .avatar {
+        width: 100%;
+        display: relative;
+    }
+
+    .my-profile .avatar .button {
+        display: block;
+        position: absolute;
+    }
+
+
+}
+
+@media screen and (max-width: 525px) {
+    .my-profile .tutor-profile-header .mt-2{
+        margin-top: 0.5rem;
+    }
+}
+
+

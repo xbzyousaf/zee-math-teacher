@@ -1,0 +1,145 @@
+.dashboard-container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.dashboard-container .dashboard-menu {
+  width: 200px;
+  max-width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #adadad;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 1200;
+  overflow: hidden;
+}
+
+.dashboard-container .tab {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.dashboard-container .MuiBadge-badge {
+  margin-right: -11px;
+}
+
+.dashboard-container .tab.active {
+  color: white ! important;
+  background-color: #0262C2;
+}
+
+.dashboard-container .tab:hover {
+  /* text-decoration: underline; */
+  color: #0262C2;
+}
+
+.dashboard-container .tab:not(:last-child) {
+  border-bottom: 1px solid #adadad;
+}
+
+.dashboard-container .dashboard-content {
+  width: calc(100% - 220px);
+  margin-left: 220px;
+}
+
+.dashboard-container .simple-box-container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-container .simple-box-container>div {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.dashboard-container .simple-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 200px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  justify-content: center;
+  flex: 1;
+  max-width: 500px;
+}
+
+.dashboard-container .simple-box .count {
+  font-size: 18pt;
+}
+
+.dashboard-container .simple-box .box-name {
+  font-size: 14pt;
+}
+
+.dashboard-container .simple-box .desc {
+  font-size: 12pt;
+}
+
+@media screen and (max-width: 899px) {
+  .dashboard-container .simple-box-container {
+    flex-direction: column;
+  }
+
+  .dashboard-container .simple-box-container>div {
+    width: 100%;
+  }
+
+  .dashboard-container .dashboard-menu {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+
+  .dashboard-container .dashboard-content {
+    width: 100%;
+    margin: 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .dashboard-container {
+    padding: 0.5rem;
+  }
+
+  .dashboard-container .simple-box-container {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .dashboard-container .simple-box-container>div {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .dashboard-container .simple-box {
+    width: 100%;
+  }
+
+  .dashboard-container .dashboard-menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dashboard-container .dashboard-content {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+}

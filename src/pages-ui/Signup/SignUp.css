@@ -1,0 +1,231 @@
+.child-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem;
+    width: 100%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+.child-profile-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sign-up-container .name-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width:100%;
+}
+
+.sign-up-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.sign-up-container .heading{
+    font-size: 1.5rem !important;
+}
+
+.page-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Childform {
+    width: 60%;
+    background-color: rgb(250, 249, 249);
+    padding: 30px;
+}
+.form-top {
+    height: 70px;
+}
+
+.form-top > img {
+    height: 50px;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Open Sans';
+}
+.mt20 {
+    margin-top: 20px;
+}
+
+input {
+    margin-top: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    line-height: 1.2em;
+}
+.inp250 {
+    min-width: 505px;
+}
+
+.red {
+    color: red;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-class {
+    width: 120px;
+    padding: 8px 12px;
+    color: white;
+    background: red;
+}
+.childheading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.contact-link-style {
+    color: #0099ff !important;
+}
+.contact-link-style:hover {
+    color: #2baaff !important;
+}
+
+input[type='file'] {
+    /* min-width: 45%; */
+    max-width: 100% !important;
+    color: #444;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #0099ff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input[type='file']::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #0099ff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input[type='file']::file-selector-button:hover {
+    background: #0099ff;
+}
+
+.name{
+    flex: 1;
+    width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    input[type='file'] {
+        min-width: 26%;
+        max-width: 100% !important;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    input[type='file'] {
+        min-width: 26%;
+        max-width: 100% !important;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .span-risponsice-css {
+        display: block;
+    }
+    .submitbtn-inside {
+        float: none;
+        margin-top: 10px;
+        display: flex;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    input[type='file'] {
+        min-width: 96%;
+        max-width: 100% !important;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .submitbtn-inside {
+        float: right;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .child-profile {
+        margin: 10px;
+    }
+    input[type='file'] {
+        min-width: 90%;
+        max-width: 100% !important;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .submitbtn-inside {
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 525px) {
+    .child-profile {
+        margin: 5px;
+    }
+    .page-heading {
+        text-align: center;
+    }
+    input[type='file'] {
+        min-width: 88%;
+        max-width: 100% !important;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .submitbtn-inside {
+        width: 100%;
+    }
+    
+    .name{
+        flex:auto;
+        width: 100%;
+    }
+    .sign-up-container {
+        padding: 2rem 0.5rem;
+    }
+}

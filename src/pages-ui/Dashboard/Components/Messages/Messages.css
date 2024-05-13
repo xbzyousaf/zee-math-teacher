@@ -1,0 +1,105 @@
+.messages {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  margin-bottom: 1rem;
+}
+
+.messages h3 {
+  margin-top: 0.5rem;
+}
+
+.chatbox-container {
+  gap: 25px;
+  background-color: white;
+  display: flex;
+  height: 655px
+}
+.chatbox {
+  height: 650px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+}
+
+.messages .message {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #adadad;
+  position: relative;
+}
+.no-chat-found{
+    height: 100%;
+    font-size: 1.5rem;
+    color: #adadad;
+}
+
+.messages .message .delete-button {
+  /*float: right;*/
+  /*right: 0rem;*/
+  /*top: 0rem;*/
+  /*padding-top: 0;*/
+  /*padding-bottom: 0;*/
+}
+.message-box{
+  width: 600px;
+}
+
+.tab-panel-container {
+  height: 100%;
+  border: 1px solid #adadad;
+  border-radius: 10px;
+  /*margin-left: 10px*/
+}
+
+@media screen and (max-width: 1500px) {
+  .chatbox {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .no-chat-found{
+    width: 60% !important;
+  }
+  .chatbox {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .no-chat-found{
+    width: 80% !important;
+  }
+  .chatbox {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .no-chat-found{
+    width: 100% !important;
+  }
+  .message-box{
+    width: 250px;
+  }
+  .chatbox {
+    width: 100%;
+  }
+  .chatbox-container {
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .tab-panel-container {
+    margin-left: 0px;
+  }
+  .dashboard-container {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 525px) {}

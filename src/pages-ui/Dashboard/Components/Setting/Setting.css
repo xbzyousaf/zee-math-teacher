@@ -1,0 +1,39 @@
+.settings {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  margin-bottom: 1rem;
+}
+
+.settings h3 {
+  margin-top: 0.5rem;
+}
+
+.settings .setting {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #adadad;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.settings .setting .delete-button {
+  float: right;
+  right: 0rem;
+  top: 0rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1050px) {}
+
+@media screen and (max-width: 899px) {}
+
+@media screen and (max-width: 525px) {}

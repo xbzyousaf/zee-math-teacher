@@ -1,0 +1,348 @@
+.navbar {
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border: 1px solid lightGray;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-32px, 32px);
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.nav-container li {
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.nav-container .nav-item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90.164%;
+    /* 14.426px */
+}
+
+.nav-container .nav-item.join {
+    display: flex;
+    height: 50px;
+    padding: var(--padding-16px, 16px) var(--padding-32px, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-8px, 8px);
+    border-radius: var(--padding-4px, 4px);
+    border: 1px solid #0262C2;
+    background-color: #0262C2;
+    color: white;
+}
+
+
+.nav-container .nav-item.parent {
+    border: 1px solid #00AB55;
+    background-color: #00AB55;
+    color: white;
+}
+
+
+.nav-container .sign-in {
+    color: #0262C2;
+}
+
+.nav-container .sign-in:hover {
+    color: black ! important;
+}
+
+.nav-container .nav-item.join:hover {
+    background-color: white;
+    color: #0262C2;
+}
+
+.nav-container .nav-item.parent:hover {
+    background-color: white !important;
+    color: #00AB55;
+}
+
+.nav-container .MuiBadge-badge {
+    margin-right: -11px;
+}
+
+.nav-container .nav-item,
+.nav-container .nav-item:after,
+.nav-container .nav-item:before {
+    transition: all 0.5s;
+}
+
+.nav-container .nav-item:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.nav-container .link:hover{
+    color: #0262C2;
+}
+
+.nav-container .nav-item:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+/* hamburger */
+.right .hamburger {
+    width: 35px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.right .hamburger span {
+    z-index: 20;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+
+.right.active .hamburger span:first-child {
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.right.active .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.right.active .hamburger span:last-child {
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+.hamburger span {
+    color: white;
+}
+
+/* menu  */
+
+.menu {
+    width: 300px;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+    transition: all 1s ease;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu ul {
+    padding: 0 1rem;
+    margin: 0;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+    width: 100%;
+}
+
+.menu ul:first-child {
+    padding-top: 5rem;
+}
+
+.menu ul:last-child {
+    padding-bottom: 3rem;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+    line-height: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+.menu ul .nav-item {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu ul li:hover {
+    font-weight: 500;
+}
+
+.right,
+.menu {
+    display: none;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.navbar .name {
+    display: none;
+}
+
+.navbar .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.navbar .profile-menu {
+    position: fixed;
+    right: 1.5rem;
+    top: 6rem;
+    background-color: white;
+    border: solid rgb(184, 184, 184) 1px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    border-radius: 5px;
+    z-index: 10;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .profile-menu.active {
+    display: flex;
+}
+
+.navbar .profile-menu ul {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.navbar .profile-menu li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 16px;
+    width: 100%;
+    z-index: 1;
+    text-align: justify;
+    /*padding: 0.75rem 1.5rem;*/
+}
+
+
+.navbar .profile-menu li:first-child {
+    font-weight: 800;
+    /*font-size: 17px;*/
+    padding: 0.5rem 0rem;
+}
+.navbar .profile-menu li:first-child a {
+    font-size: 17px;
+}
+
+.navbar hr {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: solid rgb(194, 194, 194) 1px;
+}
+
+.navbar .full-name {
+    padding: 1.5rem 1rem;
+    font-size: 16pt;
+}
+
+
+
+
+@media screen and (max-width: 1124px) {
+    .nav-container .nav-item.join {
+        padding: var(--padding-16px, 16px) var(--padding-32px, 8px);
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo>a>img {
+        height: 64px;
+    }
+
+    .nav-container {
+        gap: 16px;
+    }
+
+    .navbar .name {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .logo>a>img {
+        height: 60px;
+    }
+    .nav-container {
+        display: none;
+    }
+
+    .right,
+    .menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 772px) {
+}
+
+@media screen and (max-width: 525px) {
+}

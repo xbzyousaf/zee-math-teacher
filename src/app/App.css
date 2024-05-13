@@ -1,0 +1,121 @@
+.App{
+    width:100%;
+    min-height: 100vh; 
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+main {
+    /* min-height: 500px; */
+    position: relative;
+    margin-top: 116px;
+    min-height: calc(100vh - 202px);
+}
+
+main::after{
+    content: '';
+}
+
+hr {
+    border-color: #e3e3e3
+}
+
+.dashed-border {
+    border-style: dashed !important;
+}
+
+.no-underline {
+    text-decoration: none !important
+}
+a.hover-underline:hover {
+    text-decoration: underline !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.grayBlueGradient {
+    background: rgb(2,98,194);
+    background: linear-gradient(90deg, rgba(2,98,194,1) 0%, rgba(124,124,124,1) 86%);
+}
+
+.mx-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+textarea {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+label {
+    color : black ! important;
+    /* font-weight: 500 ! important; */
+}
+
+.css-u4tvz2-MuiFormLabel-root{
+    font-size: 14pt ! important;
+}
+
+.blue {
+    color : #0262C2 ! important;
+}
+
+.bg-blue {
+    background-color: #0262C2 ! important;
+}
+
+.bd-blue {
+    border-color: #0262C2 ! important;
+}
+
+/*.badges {*/
+/*    background-color: #F2F7FC;*/
+/*    color: #478ED5;*/
+/*    border: none !important;*/
+/*    padding: 5px 20px;*/
+/*    margin: 0 10px 5px 0;*/
+/*    border-radius: 15px;*/
+/*    font-size: 15px;*/
+/*    box-shadow: #478ED5 1px 1px 2px;*/
+/*}*/
+
+.clear {
+    background-color : #00AB55 ! important;
+}
+
+.clear:hover {
+    background-color : #008844 ! important;
+}
+
+.grey {
+    color: #5A5A5A ! important;
+}
+
+.bd-grey {
+    border:1px solid #adadad ! important;
+}
+
+span {
+    overflow-wrap: anywhere;
+}
+
+button {
+    text-wrap: nowrap;
+}
+.green {
+    color: #00AB55;
+}

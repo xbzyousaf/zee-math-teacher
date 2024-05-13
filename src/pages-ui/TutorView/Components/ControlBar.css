@@ -1,0 +1,52 @@
+.tutor-view-container .control-bar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0rem;
+}
+
+.back-control .back{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.back-control .back:hover{
+  color: rgb(58, 183, 255);
+}
+
+.tutor-view-container .control-bar .back{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.tutor-view-container .control-bar span{
+  cursor: pointer;
+}
+
+.tutor-view-container .control-bar .back:hover{
+  color: rgb(58, 183, 255);
+}
+
+.tutor-view-container .control-bar .pre-next{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tutor-view-container .control-bar .pre-next > span{
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+}
+
+.tutor-view-container .control-bar .pre-next span:hover{
+  color: rgb(58, 183, 255);
+}
+
+@media screen and (max-width:525px) {
+  .to-search { display: none;}
+}

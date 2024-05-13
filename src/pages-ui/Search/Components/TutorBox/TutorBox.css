@@ -1,0 +1,186 @@
+.tutor-box {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  position: relative;
+}
+
+.tutor-box .avatar {
+  height: 100%;
+  width: auto;
+}
+
+.tutor-box .image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tutor-box .right-side {
+  width: 9.5rem;
+  float: right;
+  padding-left: 25px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.tutor-box .available {
+  display: flex;
+  width: auto;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.tutor-box .main-side {
+  flex: 1;
+}
+
+.tutor-body .main-side>pre {
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+  white-space: pre-wrap;
+}
+
+.tutor-body .main-side>pre p {
+  margin: 0px;
+}
+
+.tutor-body .main-side ul {
+  list-style: disc;
+}
+
+.tutor-box .right-side .price {
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+.tutor-box .main-text {
+  text-transform: capitalize;
+  margin-bottom: 0px !important;
+}
+
+.tutor-box .text .distance {
+  /*margin-left: 30px;*/
+}
+
+.tutor-box .main-text .title {
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.tutor-box .location{
+  font-size: 17px;
+  font-weight: bolder;
+  color: darkgray;
+}
+
+.tutor-box .avatar img {
+  height: 200px;
+  width: auto;
+}
+
+.tutor-box .description {
+  width: 100%;
+  flex: 1;
+}
+
+.tutor-box .tutor-header {
+  display: flex;
+}
+
+.tutor-box .text {
+  flex: 1;
+}
+
+.tutor-box .button {
+  flex: 0;
+  /*padding: 1rem 0 1rem 2rem;*/
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /*align-items: center;*/
+  justify-content: center;
+}
+
+.tutor-box .info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 2px 0px;
+}
+
+.tutor-box .name {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.tutor-box .main-text {
+  margin-bottom: 0.5rem;
+}
+
+.tutor-box .info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.tutor-box .semi-bold{
+    font-weight: 600;
+}
+
+.tutor-box .qualification {
+  display: inline-block;
+  margin: 0.2rem 0.6rem 0.2rem 0;
+  border: darkgray solid 1px;
+  padding: 0.1rem 0.8rem;
+  border-radius: 1rem;
+  color: darkgray;
+}
+
+.tutor-box .qualification-title {
+  font-size: 17px;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+span.a {
+  text-decoration: underline;
+}
+
+span.a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1050px) {}
+
+@media screen and (max-width: 920px) {
+  .tutor-box {
+    flex-direction: column;
+  }
+
+  .tutor-box .info.auth {
+    flex-direction: row;
+  }
+  .tutor-box .info {
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+
+  .tutor-box .button {
+    position: absolute;
+    right: 1rem;
+    top: 0rem;
+  }
+}
+
+@media screen and (max-width: 525px) {}

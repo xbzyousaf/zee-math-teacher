@@ -1,0 +1,27 @@
+.footer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    flex-wrap: wrap-reverse;
+    align-self: center;
+    gap: 0.5rem;
+}
+
+.footer * {
+ font-size: 14px;
+ font-weight: 500;
+ color: grey;
+ margin: 0;
+}
+
+
+@media screen and (max-width: 650px){
+    .footer {
+        flex-direction: column;
+    }
+}
+

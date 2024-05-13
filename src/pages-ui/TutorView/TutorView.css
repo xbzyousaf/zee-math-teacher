@@ -1,0 +1,349 @@
+.tutor-view-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 0.5rem;
+}
+
+.tutor-view-container .left-container {
+    flex: 7;
+}
+
+.tutor-view-container .right-container {
+    flex: 3;
+}
+
+.tutor-view-container .box {
+    padding: 1rem 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.tutor-view-container .box:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.tutor-view-container .box.main {
+    display: flex;
+    /*align-items: center;*/
+    gap: 1rem;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Open Sans';
+}
+
+
+.about p {
+    margin: 0px;
+}
+
+.about ul {
+    margin: 0px;
+}
+
+.red {
+    color: red;
+}
+
+
+.tutor-view-container .avatar {
+    height: 100%;
+    width: auto;
+}
+
+.tutor-view-container .main-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.tutor-view-container .title {
+    font-size: 17pt;
+    font-weight: 800;
+    padding-right: 10px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.tutor-view-container .avatar img {
+    height: 200px;
+    width: auto;
+}
+
+.tutor-view-container .description {
+    flex: 1;
+}
+
+.tutor-view-container .text-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.tutor-view-container .image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.tutor-view-container .text-header .price {
+    font-size: 19pt;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+.tutor-view-container .text-header .price-option {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /*align-items: flex-end;*/
+}
+
+.tutor-view-container .text-header .price-option .available-box {
+    width: 11rem;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.tutor-view-container .text {
+    flex: 1;
+}
+
+.tutor-view-container .button {
+    flex: 0;
+    padding: 1rem 0 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutor-view-container .info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
+    margin-top: 0.7rem;
+}
+
+.tutor-view-container .semi-bold{
+    font-weight: 600;
+}
+
+.tutor-view-container .info:last-child {
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.tutor-view-container .right-container .links {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.tutor-view-container .name {
+    font-size: 16pt;
+    font-weight: 800;
+}
+
+
+.tutor-view-container .info-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.tutor-view-container .qualification {
+    display: inline-block;
+    margin: 0.2rem 0.6rem 0.2rem 0;
+    border: darkgray solid 1px;
+    padding: 0.1rem 0.8rem;
+    border-radius: 1rem;
+    color: darkgray;
+}
+
+
+.tutor-view-container .qualification-title {
+    font-size: 17px;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.tutor-view-container .qualifications {
+    margin-top: 1rem;
+}
+
+.tutor-view-container .message-button-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+}
+
+.tutor-view-container .social-link {
+    display: flex;
+    /* display: inline-flex; */
+    /*justify-content: left;*/
+    align-items: center;
+}
+
+.tutor-view-container .right-container>div {
+    height:fit-content;
+}
+
+.tutor-view-container .click:hover {
+    color: rgb(67, 142, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tutor-view-container .click {
+    font-style: italic;
+}
+
+.tutor-view-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.tutor-view-container .socialLinks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .tutor-view-container .button {
+        display: flex;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .tutor-view-container .button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+}
+
+@media screen and (max-width: 899px) {
+    .tutor-view-box {
+        flex-direction: column;
+    }
+
+    .tutor-view-container .button {
+        display: none;
+    }
+
+    .tutor-view-container .right-container {
+        flex: 3;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .tutor-view-container .right-container .message {
+        flex: 1
+    }
+
+    .tutor-view-container .right-container .links {
+        width: 200px;
+    }
+
+    .tutor-view-box {
+        gap: 1.5rem;
+    }
+
+    .tutor-view-container {
+        padding: 1.5rem;
+    }
+
+    .tutor-view-container .box:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .tutor-view-container .box.main {
+        flex-direction: column;
+    }
+
+    .tutor-view-container .description {
+        width: 100%;
+    }
+
+    .tutor-view-box {
+        gap: 1rem;
+    }
+
+    .tutor-view-container {
+        padding: 1rem;
+    }
+
+    .tutor-view-container .box:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .tutor-view-container .right-container {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .tutor-view {
+        margin: 30px;
+    }
+
+    .tutor-view-container .right-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tutor-view-container .right-container .links {
+        width: auto;
+        gap: 0.5rem;
+    }
+
+    .tutor-view-box {
+        gap: 0.5rem;
+    }
+
+    .tutor-view-container {
+        padding: 0.5rem;
+    }
+
+    .tutor-view-box .box:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+
+    .tutor-view-container .text-header {
+       flex-direction: column;
+    }
+
+    .tutor-view-container .text-header .price-option {
+        align-items: flex-start;
+    }
+}
